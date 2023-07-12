@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.33808.371
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdCreativeCase", "AdCreativeCase.csproj", "{9A8D29B0-6EBC-47DD-AE5A-94A89D4B7BE9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A8D29B0-6EBC-47DD-AE5A-94A89D4B7BE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A8D29B0-6EBC-47DD-AE5A-94A89D4B7BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A8D29B0-6EBC-47DD-AE5A-94A89D4B7BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A8D29B0-6EBC-47DD-AE5A-94A89D4B7BE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60678262-B8F0-40C8-A5C8-F06FC0DF22DF}
+	EndGlobalSection
+EndGlobal
