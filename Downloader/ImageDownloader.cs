@@ -1,24 +1,23 @@
 ﻿using System.Net;
 
-namespace AdCreativeCase
+namespace AdCreativeCase.Downloader
 {
-    internal class ImageDownloader
+    public class ImageDownloader : IImageDownloader
     {
 
         public static ImageDownloader Instance = new();
 
-        private int totalImages;
-        private string savePath;
-        private int downloadedCount;
-        private int parallelism;
-        private bool isCancelled;
-        ProgressManager progressManager;
-        bool cleanUpCompleted = false;
+        private int totalImages { get; set; }
+        private string savePath { get; set; }
+        private int downloadedCount { get; set; }
+        private int parallelism { get; set; }
+        private bool isCancelled { get; set; }
+        ProgressManager progressManager { get; set; }
+        bool cleanUpCompleted { get; set; };
+
         public void Start()
         {
             ReadInput();
-
-            // Setup cancellation handler
             Console.CancelKeyPress += (sender, e) =>
             {
                 e.Cancel = true;
