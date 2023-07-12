@@ -8,9 +8,9 @@ namespace AdCreativeCase.Downloader
 {
     public interface IImageDownloader
     {
-        void Start();
-        void ReadInput();
-        void DownloadImages();
-        void Cleanup();
+       public void Start();
+        public void ReadInput();
+        public void DownloadImages();
+        public void Cleanup();
     }
 }

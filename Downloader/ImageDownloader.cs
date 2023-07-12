@@ -13,7 +13,7 @@ namespace AdCreativeCase.Downloader
         private int parallelism { get; set; }
         private bool isCancelled { get; set; }
         ProgressManager progressManager { get; set; }
-        bool cleanUpCompleted { get; set; };
+        bool cleanUpCompleted { get; set; }
 
         public void Start()
         {
@@ -29,7 +29,7 @@ namespace AdCreativeCase.Downloader
             DownloadImages();
         }
 
-        void ReadInput()
+        public void ReadInput()
         {
             Console.WriteLine("Enter the number of images to download:");
             totalImages = Convert.ToInt32(Console.ReadLine());
@@ -44,7 +44,7 @@ namespace AdCreativeCase.Downloader
                 savePath = "./outputs/";
         }
 
-        void DownloadImages()
+        public void DownloadImages()
         {
             ProgressWriter progressWriter = new ProgressWriter(totalImages, parallelism);
             progressManager = new ProgressManager();
@@ -90,7 +90,7 @@ namespace AdCreativeCase.Downloader
 
         }
 
-        void DownloadImage(int i, string imageUrl, string imagePath)
+        public void DownloadImage(int i, string imageUrl, string imagePath)
         {
             using (WebClient client = new WebClient())
             {
@@ -101,7 +101,7 @@ namespace AdCreativeCase.Downloader
             }
         }
 
-        void Cleanup()
+        public void Cleanup()
         {
             for (int i = 1; i <= downloadedCount; i++)
             {
